@@ -1,27 +1,25 @@
-# Classification du diabète avec un réseau de neurones
+# Diabetes Classification with a Neural Network
 
-Ce projet implémente un réseau de neurones simple (MLP) en Python avec NumPy pour prédire le diabète à partir du jeu de données Pima Indians Diabetes.
+This project implements a simple neural network (MLP) in Python using NumPy to predict diabetes using the Pima Indians Diabetes dataset.
 
-## Objectif
+## Objective
 
-Prédire si un patient est atteint de diabète en fonction de ses caractéristiques médicales. Le réseau est construit et entraîné sans utiliser de bibliothèques de deep learning comme TensorFlow ou PyTorch.
+The goal is to predict whether a patient has diabetes based on medical features. The model is built and trained **from scratch**, without using deep learning libraries like TensorFlow or PyTorch.
 
-## Fichiers
+## Project Files
 
-- `neural_network.py` : classe du modèle MLP avec l'optimiseur Adam  
-- `train.py` : code pour charger les données, entraîner et évaluer le modèle  
-- `diabetes.csv` : données utilisées  
-- `README.md` : ce fichier
+- `neural_network.py` – MLP model with Adam optimizer  
+- `train.py` – Code to load data, train, and evaluate the model  
+- `diabetes.csv` – Dataset used for training and testing  
+- `README.md` – This file
 
-## Fonctionnalités
+## Features
 
-- Implémentation manuelle du MLP
-- Optimiseur Adam
-- Métriques : accuracy, F1-score, matrice de confusion
-- Courbes de perte et de précision
+- Manual implementation of:
+  - Forward and backward propagation
+  - ReLU and Sigmoid activations
+  - Adam optimizer
+  - L2 regularization
+- Accuracy, F1-score, confusion matrix
+- Training and validation curves
 
-## Exécution
-
-```bash
-pip install -r requirements.txt
-python train.py
